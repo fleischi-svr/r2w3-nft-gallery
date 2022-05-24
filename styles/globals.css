@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* containerClassName={"paginationBttns"}
+previousLinkClassName={"previousBttn"}
+nextLinkClassName={"nextBttn"}
+disabledClassName={"paginationDisabled"}
+activeClassName={"paginationActive"} */
+
+.paginationBttns{
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationBttns a{
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+.paginationBttns a:hover{
+    color: white;
+    background-color: blue;
+}
+.paginationActive a{
+    color: white;
+    background-color: blue;
+}
